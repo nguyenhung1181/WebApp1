@@ -45,6 +45,7 @@
                         <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
                     </p>
                 </div>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
             </form>
         </section>
     </div>
@@ -78,7 +79,14 @@
             }
         </section>
     </div>
-</div>
+    
+</div
+
+@*Signin Google*@
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
